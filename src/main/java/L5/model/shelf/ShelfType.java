@@ -1,4 +1,4 @@
-package L7.model.shelf;
+package L5.model.shelf;
 
 /**
  * Тип полки (мясная, рыбная, овощная)

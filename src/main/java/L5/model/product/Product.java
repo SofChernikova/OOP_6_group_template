@@ -1,4 +1,4 @@
-package L7.model.product;
+package L5.model.product;
 
 import lombok.Getter;
 import lombok.Setter;

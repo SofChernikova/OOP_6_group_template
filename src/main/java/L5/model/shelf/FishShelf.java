@@ -1,6 +1,6 @@
-package L7.model.shelf;
+package L5.model.shelf;
 
-import L7.model.product.Product;
+import L5.model.product.Product;
 
 import java.util.ArrayList;
 import java.util.List;

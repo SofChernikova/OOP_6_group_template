@@ -1,8 +1,8 @@
-package L7.service;
+package L5.service;
 
-import L7.model.product.Product;
-import L7.model.product.ProductType;
-import L7.model.shelf.*;
+import L5.model.product.Product;
+import L5.model.product.ProductType;
+import L5.model.shelf.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -78,20 +78,20 @@ class ShelfManagerTest {
     @DisplayName("Проверим, что если мы вдруг перепутали полки, то наш менеджер все равно положит на правильную")
     void distributionOfProductsWithWrongShelfPositiveTest(){
         assertDoesNotThrow(() -> shelfManager.putProductOnShelf(
-                products.getFirst(),
+                products.get(0),
                 shelves.get("meat")
         ));
 
         assertEquals(shelves.get("meat").getProducts().size(), 0);
 
         assertEquals(shelves.get("fish").getProducts().size(), 1);
-        assertEquals(shelves.get("fish").getProducts().getFirst().getProductType(),
-                products.getFirst().getProductType());
+        assertEquals(shelves.get("fish").getProducts().get(0).getProductType(),
+                products.get(0).getProductType());
     }
 
     private boolean checkProductOnShelf(Shelf shelf) {
         return shelf.getProducts().size() == 1
-                && shelf.getProducts().getFirst().getProductType().toValue()
+                && shelf.getProducts().get(0).getProductType().toValue()
                 .equals(shelf.getShelfType().toValue());
     }
 

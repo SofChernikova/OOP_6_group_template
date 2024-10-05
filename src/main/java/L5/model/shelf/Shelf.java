@@ -1,6 +1,6 @@
-package L7.model.shelf;
+package L5.model.shelf;
 
-import L7.model.product.Product;
+import L5.model.product.Product;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
