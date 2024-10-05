@@ -1,4 +1,4 @@
-package L7.model.product;
+package L5.model.product;
 
 /**
  * Тип продукта (мясо, рыба, овощ)

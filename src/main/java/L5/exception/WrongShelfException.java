@@ -1,4 +1,4 @@
-package L7.exception;
+package L5.exception;
 
 public class WrongShelfException extends RuntimeException {
 

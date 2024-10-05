@@ -1,10 +1,10 @@
-package L7.service;
+package L5.service;
 
-import L7.exception.WrongShelfException;
-import L7.model.product.Product;
-import L7.model.product.ProductType;
-import L7.model.shelf.Shelf;
-import L7.model.shelf.ShelfType;
+import L5.exception.WrongShelfException;
+import L5.model.product.Product;
+import L5.model.product.ProductType;
+import L5.model.shelf.Shelf;
+import L5.model.shelf.ShelfType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
